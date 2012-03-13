@@ -2,12 +2,16 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
+  <remote  name="javroch"
+           fetch="https://github.com/javroch/" />
+  <remote  name="chains"
+           fetch="https://github.com/ChainsDD/" />
   <default revision="refs/tags/android-4.0.3_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build">
+  <project path="build" name="android_build" remote="javroch" revision="javroch-4.0.3_r1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -150,7 +154,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="javroch" revision="javroch-4.0.3_r1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
@@ -233,9 +237,14 @@
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="platform/system/core" />
-  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras" name="android_system_extras" remote="javroch" revision="javroch-4.0.3_r1" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
+
+  <project path="vendor/javroch" name="android_vendor_javroch" remote="javroch" />
+  <project path="vendor/samsung/toro" name="android_vendor_samsung_toro" remote="javroch" />
+  <project path="packages/apps/Superuser" name="Superuser" remote="chains" revision="master" />
+  <project path="system/su" name="su-binary" remote="chains" revision="master" />
 
 </manifest>
