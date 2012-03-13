@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="jav"
+  <remote  name="javroch"
            fetch="https://github.com/javroch/" />
   <remote  name="chains"
            fetch="https://github.com/ChainsDD/" />
@@ -12,7 +12,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="jav">
+  <project path="build" name="android_build" remote="javroch">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -163,7 +163,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="jav" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="javroch" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
@@ -231,7 +231,7 @@
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="jav" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="javroch" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
@@ -252,13 +252,13 @@
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="platform/system/core" />
-  <project path="system/extras" name="android_system_extras" remote="jav" />
+  <project path="system/extras" name="android_system_extras" remote="javroch" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <project path="vendor/javroch" name="android_vendor_javroch" remote="jav" />
-  <project path="vendor/samsung/toro" name="android_vendor_samsung_toro" remote="jav" />
+  <project path="vendor/javroch" name="android_vendor_javroch" remote="javroch" />
+  <project path="vendor/samsung/toro" name="android_vendor_samsung_toro" remote="javroch" />
   <project path="packages/apps/Superuser" name="Superuser" remote="chains" />
   <project path="system/su" name="su-binary" remote="chains" />
 </manifest>
