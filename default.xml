@@ -9,7 +9,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="javroch" revision="javroch-4.0.4_r1.1">
+  <project path="build" name="android_build" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -19,7 +19,7 @@
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" name="platform/dalvik" />
-  <project path="development" name="android_development" remote="javroch" revision="javroch-4.0.4_r1.1" />
+  <project path="development" name="android_development" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
@@ -154,7 +154,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="javroch" revision="javroch-4.0.4_r1.1" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
@@ -204,7 +204,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="javroch" revision="javroch-4.0.4_r1.1" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
@@ -218,7 +218,7 @@
   <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="javroch" revision="javroch-4.0.4_r1.1" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
   <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
@@ -236,15 +236,15 @@
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="android_system_core" remote="javroch" revision="javroch-4.0.4_r1.1" />
-  <project path="system/extras" name="android_system_extras" remote="javroch" revision="javroch-4.0.4_r1.1" />
+  <project path="system/core" name="android_system_core" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
+  <project path="system/extras" name="android_system_extras" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
 
-  <project path="vendor/javroch" name="android_vendor_javroch" remote="javroch" />
-  <project path="vendor/samsung/toro" name="android_vendor_samsung_toro" remote="javroch" />
-  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="javroch" />
-  <project path="system/su" name="android_system_su" remote="javroch" />
+  <project path="vendor/javroch" name="android_vendor_javroch" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
+  <project path="vendor/samsung/toro" name="android_vendor_samsung_toro" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
+  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
+  <project path="system/su" name="android_system_su" remote="javroch" revision="refs/tags/javroch-4.0.4_r1.1-1" />
 
 </manifest>
