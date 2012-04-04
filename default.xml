@@ -265,4 +265,5 @@
   <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="javroch" />
   <project path="system/su" name="android_system_su" remote="javroch" />
   <project path="packages/apps/CleanOptions" name="android_packages_apps_CleanOptions" remote="javroch" />
+
 </manifest>
